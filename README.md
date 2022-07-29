@@ -48,6 +48,7 @@ git branch -m feature/002 feature/003
 ````
 
 Estes materiais são resumos do documento criado por Lucas Salvador em 11/05/2020:
+
 [Simplificando o git com git alias](https://medium.com/trainingcenter/simplificando-o-git-com-git-alias-de488094855f)
 
 [Git alias - seja rápido, seja breve!](https://gist.github.com/kelvinst/331aff32508e2517afbd)
