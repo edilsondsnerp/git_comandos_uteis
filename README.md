@@ -42,5 +42,10 @@ git config --list | grep alias
 git config --global --unset alias.st
 ````
 
+## Comando para renomear um branch local
+````
+git branch -m feature/002 feature/003
+````
+
 Este material é um resumo do documento criado por Lucas Salvador em 11/05/2020:
 [Simplificando o git com git alias](https://medium.com/trainingcenter/simplificando-o-git-com-git-alias-de488094855f)
