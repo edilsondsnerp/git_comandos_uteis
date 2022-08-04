@@ -52,3 +52,8 @@ Estes materiais são resumos do documento criado por Lucas Salvador em 11/05/202
 [Simplificando o git com git alias](https://medium.com/trainingcenter/simplificando-o-git-com-git-alias-de488094855f)
 
 [Git alias - seja rápido, seja breve!](https://gist.github.com/kelvinst/331aff32508e2517afbd)
+
+### Função do Rômulo
+````
+git config --global alias.clonar "!f() { git clone http://172.16.101.7/bimer/web/on-premises/v1/wisepcp.git WPCP-${2-0000} && cd $(pwd)/WPCP-${2-0000}/ && git flow init && git pull && git flow ${1-feature} start WPCP-${2-0000}; }; f"
+````
