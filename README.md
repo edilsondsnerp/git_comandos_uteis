@@ -47,6 +47,30 @@ git config --global --unset alias.st
 git branch -m feature/002 feature/003
 ````
 
+
+## Sequência de comandos para criar um Hotfix no Gitlab
+
+### Criação do branch
+````
+git checkout main
+git pull
+git flow hotfix start 1.26.45.7
+````
+
+
+## 
+````
+git flow init -d
+````
+
+
+
+
+
+
+
+
+
 Estes materiais são resumos do documento criado por Lucas Salvador em 11/05/2020:
 
 [Simplificando o git com git alias](https://medium.com/trainingcenter/simplificando-o-git-com-git-alias-de488094855f)
