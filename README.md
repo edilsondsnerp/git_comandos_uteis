@@ -12,7 +12,7 @@ Para executar o novo comando, basta:
 git st
 ````
 
-## Criar aliases que usamc comandos do Shell
+## Criar aliases que usam comandos do Shell
 Dá para usar comandos do shell nos aliases criados. Com essa estratégia dá para ter comandos que só daria para fazer no Gitbash direto no prompt do DOS.
 Exemplo:
 ````
