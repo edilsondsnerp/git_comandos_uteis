@@ -47,6 +47,10 @@ git config --global --unset alias.st
 git branch -m feature/002 feature/003
 ````
 
+## Comando para remover um branch local
+````
+git branch --delete feature/002
+````
 
 ## Sequência de comandos para criar um Hotfix no Gitlab
 
