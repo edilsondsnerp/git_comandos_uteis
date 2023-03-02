@@ -62,7 +62,7 @@ git flow hotfix start 1.26.45.7
 ````
 
 
-## Inicia um git glow sem perguntas
+## Inicia um git flow sem perguntas
 ````
 git flow init -d
 ````
