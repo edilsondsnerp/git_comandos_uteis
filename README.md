@@ -85,3 +85,17 @@ Estes materiais são resumos do documento criado por Lucas Salvador em 11/05/202
 ````
 git config --global alias.clonar "!f() { git clone http://172.16.101.7/bimer/web/on-premises/v1/wisepcp.git WPCP-${2-0000} && cd $(pwd)/WPCP-${2-0000}/ && git flow init && git pull && git flow ${1-feature} start WPCP-${2-0000}; }; f"
 ````
+
+## Comandos personalizados para Wise e Integrador Bimer x Muven
+````
+git clonar - Cria um clone do repositório do Wise, criado um branch. Recebe os parâmetro: tipo (feature bugfix hotfix), XXXX (número do processo)
+
+clonarex - Cria um clone de um branch já existente
+
+cloneibmuv - Cria um clone do repositório do Integrador Bimer x Muven, criado um branch. Recebe os parâmetro: tipo (feature bugfix hotfix), XXXX (número do processo)
+
+cloneibmuvex - Cria um clone de um branch já existente
+
+````
+
+
