@@ -95,6 +95,27 @@ criari  = "!f() { tipo=${1:-feature}; tipo=${tipo,,}; git clone https://git.alte
 criarw  = "!f() { tipo=${1:-feature}; tipo=${tipo,,}; git clone https://git.alterdata.com.br/bimer/web/on-premises/v1/wisepcp.git WPCP${2-0000} && cd $(pwd)/WPCP${2-0000}/ && git checkout develop && git checkout -b ${tipo}/WPCP${2-0000} && git push --set-upstream origin ${tipo}/WPCP${2-0000}; }; f"
 ````
 
+### Comando criar unificado
+````
+    criar  = "!f() { \
+        projeto=${1:-i}; \
+        tipo=${2:-feature}; tipo=${tipo,,}; \
+        if [ \"$projeto\" = \"i\" ]; then \
+            repo=\"https://git.alterdata.com.br/bimer/desktop/integradores/bimer-x-muven.git\"; \
+            prefixo=\"IBMUV\"; \
+        elif [ \"$projeto\" = \"w\" ]; then \
+            repo=\"https://git.alterdata.com.br/bimer/web/on-premises/v1/wisepcp.git\"; \
+            prefixo=\"WPCP\"; \
+        else \
+            echo \"Projeto inválido. Use 'i' para IBMUV ou 'w' para WPCP.\"; exit 1; \
+        fi; \
+        git clone \"$repo\" \"${prefixo}${3-0000}\" && cd \"${prefixo}${3-0000}\" && \
+        git checkout develop && \
+        git checkout -b \"${tipo}/${prefixo}${3-0000}\" && \
+        git push --set-upstream origin \"${tipo}/${prefixo}${3-0000}\"; \
+    }; f"
+````
+
 ## Comandos personalizados para Wise e Integrador Bimer x Muven
 ````
 git clonar - Cria um clone do repositório do Wise, criado um branch. Recebe os parâmetro: tipo (feature bugfix hotfix), XXXX (número do processo)
