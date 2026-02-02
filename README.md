@@ -118,13 +118,14 @@ criarw  = "!f() { tipo=${1:-feature}; tipo=${tipo,,}; git clone https://git.alte
 
 ## Comandos personalizados para Wise e Integrador Bimer x Muven
 ````
-git clonar - Cria um clone do repositório do Wise, criado um branch. Recebe os parâmetro: tipo (feature bugfix hotfix), XXXX (número do processo)
+git criar - Cria um clone do repositório (w para Wise, i para o Integrador), cria um branch local com o número do processo e o tipo de branch e sobre para o Gitlab com upstream.
+            Deixa o branch criado como branch corrente.
+            Exemplo para o Wise:  git criar w feature 9999
 
-clonarex - Cria um clone de um branch já existente
+git clonar - Cria um clone do repositório (w para Wise, i para o Integrador) com a pasta do número do processo passado como parâmetro e deixa develop como branch corrente.
 
-cloneibmuv - Cria um clone do repositório do Integrador Bimer x Muven, criado um branch. Recebe os parâmetro: tipo (feature bugfix hotfix), XXXX (número do processo)
-
-cloneibmuvex - Cria um clone de um branch já existente
+git clonarb - Cria um clone de um branch que já existe remoto. Os parâmetros são w ou i e o número do processo. Deixa o branch do processo como branch corrente.
+            
 
 ````
 
